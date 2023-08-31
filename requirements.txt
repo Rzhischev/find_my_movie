@@ -1,6 +1,7 @@
 pandas
 transformers
 torch
-faiss  # Если вы используете FAISS для поиска ближайших соседей
+faiss-cpu
+faiss-gpu
 streamlit
 
