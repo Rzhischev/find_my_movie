@@ -8,7 +8,7 @@ st.title("Random Movie Descriptions")
 # Чтение данных из CSV-файла
 @st.cache_data
 def load_data():
-    return pd.read_csv("movies.csv")
+    return pd.read_csv("ithinker_movies.csv")
 
 data = load_data()
 
