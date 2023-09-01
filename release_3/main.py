@@ -1,9 +1,13 @@
+import math
 import faiss
 import streamlit as st
 from transformers import AutoTokenizer, AutoModel
 import torch
 import joblib
 import pandas as pd
+
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
 
 # Загрузка сохраненных данных и индекса
 text_embeddings = joblib.load('release_3/mail_embeddings.joblib')
@@ -58,4 +62,4 @@ if st.button("Найти"):
                 st.write(descr[index])  # Выводим описание фильма
             
             with col3:
-                st.write(f"Уверенность: {(1/(1-distances[0][i]))*100:.1f}%")  # Выводим уверенность
+                st.write(f"Уверенность: {(1-sigmoid(distances[0][i]))*100:.1f}%")  # Выводим уверенность
