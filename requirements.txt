@@ -1,0 +1,7 @@
+pandas
+transformers
+torch
+faiss-cpu
+faiss-gpu
+streamlit
+joblib
