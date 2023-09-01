@@ -6,11 +6,11 @@ import joblib
 import pandas as pd
 
 # Загрузка сохраненных данных и индекса
-text_embeddings = joblib.load('release_3/mail_embeddings.joblib')
-index = faiss.read_index('release_3/mail_faiss_index.index')
+text_embeddings = joblib.load('mail_embeddings.joblib')
+index = faiss.read_index('mail_faiss_index.index')
 
 # Датасет
-df = pd.read_csv('release_3/clean_mail_movie.csv')
+df = pd.read_csv('clean_mail_movie.csv')
 titles = df['movie_title'].tolist()
 images = df['image_url'].tolist()
 descr = df['description'].tolist()
@@ -58,4 +58,4 @@ if st.button("Найти"):
                 st.write(descr[index])  # Выводим описание фильма
             
             with col3:
-                st.write(f"Уверенность: {1 / (1 + distances[0][i]):.2f}")  # Выводим уверенность
+                st.write(f"Уверенность: {(1/1-distances[0][i])*100:.1f}%")  # Выводим уверенность
