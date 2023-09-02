@@ -1,4 +1,4 @@
-import math
+import numpy as np
 import faiss
 import streamlit as st
 from transformers import AutoTokenizer, AutoModel
@@ -7,7 +7,7 @@ import joblib
 import pandas as pd
 
 def sigmoid(x):
-    return 1 / (1 + math.exp(-x))
+    return 1 / (1 + np.exp(-x))
 
 # Загрузка сохраненных данных и индекса
 text_embeddings = joblib.load('release_3/mail_embeddings.joblib')
