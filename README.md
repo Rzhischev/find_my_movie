@@ -5,7 +5,7 @@
 ### Phase-2 | Team project
 
 ## 🦸‍♂️Команда
-1. [Салман Чакаев](https://github.com/veidlink).
+1. [Салман Чакаев](https://github.com/veidlink)
 2. [Гриша Ржищев](https://github.com/Rzhischev)
 3. [Дмитрий Ванькин](https://github.com/cobalt1705)
    
