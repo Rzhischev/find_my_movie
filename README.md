@@ -11,7 +11,7 @@
    
 ## 🎯 Задача
 Разработка приложения с использованием Streamlit.
-Сервис развернут на [HuggingFace Spaces](https://huggingface.co/spaces/veidlink/find_my_movie_hf). А также на [Streamlit](https://findmymoviee.streamlit.app/).
+Сервис развернут на [HuggingFace Spaces](https://huggingface.co/spaces/veidlink/find_my_movie_hf).
 
 ## 🚂 Модель
 Приложение работает на модели BERT - [rubert-tiny2](https://huggingface.co/cointegrated/rubert-tiny2).
