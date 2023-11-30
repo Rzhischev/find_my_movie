@@ -16,7 +16,7 @@ The service is deployed on [HuggingFace Spaces](https://huggingface.co/spaces/ve
 ## 🚂 Model
 The application operates on the BERT model - [rubert-tiny2](https://huggingface.co/cointegrated/rubert-tiny2).
 
-## 📝 Workflow
+## 📝 Pipeline
 1. We have scraped 12,000 movies from the mail.ru catalog. The information used for recommendations includes the movie description from the movie page and editorial reviews.
 2. Bert encodes the description+review for each movie into a vector.
 3. The user enters the movie description, which is also passed through BERT, yielding encoded information in vector form.
